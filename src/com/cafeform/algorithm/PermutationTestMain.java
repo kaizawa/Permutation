@@ -4,22 +4,22 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Combination
+ * Test main class for Permutation class
  */
-public class CombinationTestMain
+public class PermutationTestMain
 {
 	public static void main(String args[]){
-		new CombinationTestMain().start();
+		new PermutationTestMain().start();
 	}
 
 	private void start()
 	{
-		int num = 2;
+		int num = 3;
 		List<String> list = Arrays.asList("a", "b", "c", "d", "e");
 		List<List<String>> result;
 
-		Combination combination = new Combination(list, num);
-		result = combination.getResult();
+		Permutation permutation = new Permutation(list, num);
+		result = permutation.getResult();
 
 		System.out.println("Count: " + result.size());
 		System.out.println(result);
